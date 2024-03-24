@@ -1,0 +1,19 @@
+alias ls='gls --color=auto'
+alias lsa='gls -a --color=auto'
+alias ll='gls -lA --color=auto'
+
+alias home='cd ~'
+alias root='cd /'
+alias ..='cd ..'
+alias ...='cd ..; cd ..'
+alias ....='cd ..; cd ..; cd ..'
+
+#alias update='sudo apt-get update && sudo apt-get upgrade'
+
+###-tns-completion-start-###
+if [ -f /Users/nils/.tnsrc ]; then 
+    source /Users/nils/.tnsrc 
+fi
+###-tns-completion-end-###
+
+eval "$(starship init bash)"
